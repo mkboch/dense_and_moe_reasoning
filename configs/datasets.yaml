@@ -1,0 +1,49 @@
+datasets:
+  - name: gsm8k
+    hf_path: "gsm8k"
+    hf_name: "main"
+    split: "test"
+    sample_size: 400
+    seed: 42
+    task_type: "free_form_math"
+    answer_key: "answer"
+    question_key: "question"
+    max_new_tokens: 512
+    extractor: "gsm8k"
+
+  - name: math_l1_l3
+    hf_path: "nlile/hendrycks-MATH-benchmark"
+    hf_name: null
+    split: "test"
+    sample_size: 300
+    seed: 42
+    task_type: "free_form_math"
+    answer_key: "solution"
+    question_key: "problem"
+    max_new_tokens: 1024
+    extractor: "math"
+
+  - name: arc_challenge
+    hf_path: "allenai/ai2_arc"
+    hf_name: "ARC-Challenge"
+    split: "test"
+    sample_size: 300
+    seed: 42
+    task_type: "multiple_choice"
+    answer_key: "answerKey"
+    question_key: "question"
+    choices_key: "choices"
+    max_new_tokens: 256
+    extractor: "arc"
+
+  - name: truthfulqa_mc1
+    hf_path: "truthful_qa"
+    hf_name: "multiple_choice"
+    split: "validation"
+    sample_size: 150
+    seed: 42
+    task_type: "multiple_choice"
+    answer_key: "mc1_targets"
+    question_key: "question"
+    max_new_tokens: 256
+    extractor: "truthfulqa"

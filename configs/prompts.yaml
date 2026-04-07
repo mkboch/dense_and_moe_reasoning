@@ -1,0 +1,25 @@
+strategies:
+  zero_shot:
+    name: "zero_shot"
+    template: |
+      {question}
+
+      Answer:
+  cot:
+    name: "cot"
+    template: |
+      {question}
+
+      Let's think step by step.
+  few_shot_cot:
+    name: "few_shot_cot"
+    template: |
+      {few_shot_block}
+
+      Q: {question}
+      A: Let's think step by step.
+generation:
+  temperature: 0.0
+  do_sample: false
+  batch_size: 1
+  seed: 42

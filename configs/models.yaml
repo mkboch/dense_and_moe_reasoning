@@ -1,0 +1,77 @@
+models:
+  - name: phi_4_mini_reasoning
+    pretty_name: "Phi-4-mini-reasoning"
+    hf_id: "microsoft/Phi-4-mini-reasoning"
+    revision: null
+    architecture: "dense"
+    total_params_b: 3.8
+    active_params_b: 3.8
+    default_dtype: "bfloat16"
+    trust_remote_code: false
+    use_chat_template: true
+
+  - name: gemma_4_e2b
+    pretty_name: "Gemma-4-E2B"
+    hf_id: "google/gemma-4-E2B-it"
+    revision: null
+    architecture: "moe"
+    total_params_b: 5.0
+    active_params_b: 2.0
+    default_dtype: "bfloat16"
+    trust_remote_code: false
+    use_chat_template: true
+
+  - name: gemma_4_e4b
+    pretty_name: "Gemma-4-E4B"
+    hf_id: "google/gemma-4-E4B-it"
+    revision: null
+    architecture: "moe"
+    total_params_b: 8.0
+    active_params_b: 4.0
+    default_dtype: "bfloat16"
+    trust_remote_code: false
+    use_chat_template: true
+
+  - name: qwen3_30b_a3b
+    pretty_name: "Qwen3-30B-A3B"
+    hf_id: "Qwen/Qwen3-30B-A3B"
+    revision: null
+    architecture: "moe"
+    total_params_b: 30.0
+    active_params_b: 3.0
+    default_dtype: "bfloat16"
+    trust_remote_code: false
+    use_chat_template: true
+
+  - name: gemma_4_26b_a4b
+    pretty_name: "Gemma-4-26B-A4B"
+    hf_id: "google/gemma-4-26B-A4B-it"
+    revision: null
+    architecture: "moe"
+    total_params_b: 26.0
+    active_params_b: 3.8
+    default_dtype: "bfloat16"
+    trust_remote_code: false
+    use_chat_template: true
+
+  - name: qwen3_8b
+    pretty_name: "Qwen3-8B"
+    hf_id: "Qwen/Qwen3-8B"
+    revision: null
+    architecture: "dense"
+    total_params_b: 8.0
+    active_params_b: 8.0
+    default_dtype: "bfloat16"
+    trust_remote_code: false
+    use_chat_template: true
+
+  - name: phi_4_reasoning
+    pretty_name: "Phi-4-reasoning"
+    hf_id: "microsoft/Phi-4-reasoning"
+    revision: null
+    architecture: "dense"
+    total_params_b: 14.0
+    active_params_b: 14.0
+    default_dtype: "bfloat16"
+    trust_remote_code: false
+    use_chat_template: true
