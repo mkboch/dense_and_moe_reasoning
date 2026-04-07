@@ -68,7 +68,6 @@ The broader conclusion is that sparse activation alone does not guarantee the be
 ├── reproduce.sh
 ├── run_complete_plan_v3.sh
 ├── run_coverage_v2.sh
-├── requirements.txt
 └── README.md
 ```
 
@@ -232,7 +231,6 @@ This section gives a practical workflow using the scripts already present in the
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
 ```
 
 If you already use a project environment, activate that instead.
@@ -350,7 +348,6 @@ If you want the shortest practical sequence, use this order:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
 python data/prepare_datasets.py
 bash run_complete_plan_v3.sh
 python analysis/finalize_complete_plan_results.py
